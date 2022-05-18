@@ -6,7 +6,7 @@
 /*   By: irmoreno <irmoreno@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 16:03:43 by irmoreno          #+#    #+#             */
-/*   Updated: 2022/05/18 13:52:10 by irmoreno         ###   ########.fr       */
+/*   Updated: 2022/05/18 15:47:23 by irmoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <string.h>
 # include <stdio.h>
 # include <stdlib.h>
+# include <unistd.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
