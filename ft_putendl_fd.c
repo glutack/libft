@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: irmoreno <irmoreno@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/26 14:02:57 by irmoreno          #+#    #+#             */
-/*   Updated: 2022/05/18 16:43:07 by irmoreno         ###   ########.fr       */
+/*   Created: 2022/05/18 15:55:50 by irmoreno          #+#    #+#             */
+/*   Updated: 2022/05/18 16:34:39 by irmoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+void	ft_putendl_fd(char *s, int fd)
 {
-	char	*str;
+	unsigned int	i;
 
-	str = (char *)s;
-	if (*str == '\0' && *str == (unsigned char)c)
-		return (str);
-	while (*str != c && *str)
-		str++;
-	if (*str == c)
-		return (str);
-	return (0);
+	i = 0;
+	if (!s)
+		return ;
+	while (s[i] != '\0')
+	{
+		write(fd, &s[i], 1);
+		i++;
+	}
+	write(fd, "\n", 1);
 }
