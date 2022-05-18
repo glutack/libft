@@ -6,7 +6,7 @@
 /*   By: irmoreno <irmoreno@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 16:03:43 by irmoreno          #+#    #+#             */
-/*   Updated: 2022/05/17 16:52:22 by irmoreno         ###   ########.fr       */
+/*   Updated: 2022/05/18 13:54:51 by irmoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,4 +78,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 			//genera nueva string con el resultado
 char	*ft_itoa(int n);
 			//genera str que represente el valor entero recibido como arg
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+			//aplica función f a cada carácter de s. No devuelve nada
+void	ft_putchar_fd(char c, int fd);
+			//envía c al file descriptor. No devuelve nada
 #endif
