@@ -6,7 +6,7 @@
 /*   By: irmoreno <irmoreno@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 16:03:43 by irmoreno          #+#    #+#             */
-/*   Updated: 2022/05/18 15:47:23 by irmoreno         ###   ########.fr       */
+/*   Updated: 2022/05/18 15:52:24 by irmoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,4 +49,5 @@ char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
 #endif
