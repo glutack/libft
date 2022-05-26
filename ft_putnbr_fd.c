@@ -6,7 +6,7 @@
 /*   By: irmoreno <irmoreno@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 16:47:11 by irmoreno          #+#    #+#             */
-/*   Updated: 2022/05/19 12:56:10 by irmoreno         ###   ########.fr       */
+/*   Updated: 2022/05/19 13:01:11 by irmoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -25,6 +25,6 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n / 10, fd);
 		ft_putnbr_fd(n % 10, fd);
 	}
-	else 
+	else
 		ft_putchar_fd(n + '0', fd);
 }
