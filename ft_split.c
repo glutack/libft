@@ -6,7 +6,7 @@
 /*   By: irmoreno <irmoreno@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 16:49:12 by irmoreno          #+#    #+#             */
-/*   Updated: 2022/05/17 16:49:15 by irmoreno         ###   ########.fr       */
+/*   Updated: 2022/06/02 17:33:22 by irmoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,8 @@ char	**ft_split(char const *s, char c)
 		if (*s && *s != c)
 		{
 			result[i] = ft_create_strings(s, c);
+			if (result[i] == 0)
+				return (ft_free(result, i));
 			i++;
 			while (*s && *s != c)
 				s++;
