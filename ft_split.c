@@ -6,7 +6,7 @@
 /*   By: irmoreno <irmoreno@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 16:49:12 by irmoreno          #+#    #+#             */
-/*   Updated: 2022/06/02 17:33:22 by irmoreno         ###   ########.fr       */
+/*   Updated: 2022/06/02 19:01:04 by irmoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,20 @@ static int	ft_count_strings(char const *s, char c)
 		}
 	}
 	return (num);
+}
+
+static char	**ft_free(char **ptr, unsigned int n)
+{
+	unsigned int	i;
+
+	i = 0;
+	while (i < n)
+	{
+		free(ptr[i]);
+		i++;
+	}
+	free(ptr);
+	return (NULL);
 }
 
 static char	*ft_create_strings(char const *s, char c)
