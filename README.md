@@ -105,4 +105,4 @@ Functions not specified for LIBFT project that I've created while doing other pr
 | [`void	ft_free_split(char **ptr)`](https://github.com/glutack/libft/blob/master/src/ft_free_split.c) | Frees all strings int a str array |
 
 ---
-<sub>banner by @ me || 30/03/2023</sub>
+<sub>banner by @ me</sub>
