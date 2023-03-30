@@ -3,7 +3,7 @@
 In the `libft` project we are ask to create a library with some home-made functions *(some of them replicate already existing functions)*
 
 ## Functions:
-## True / False
+### True / False
 | **Function** | **Description**|
 | :-------- | :--------- |
 | [`int	ft_isalpha(int c)`](https://github.com/glutack/libft/blob/master/src/ft_isalpha.c) | Checks if input is a letter in the `ASCII` table |
