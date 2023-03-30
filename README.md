@@ -6,7 +6,7 @@ In the `libft` project we are ask to create a library with some home-made functi
 | Function | Description |
 | :--------: | :---------: |
 | **TRUE(1) / FALSE(0)** | --- |
-| `int	ft_isalpha(int c)` | Checks if input is a letter in the `ASCII` table |
+| [`int	ft_isalpha(int c)`](https://github.com/glutack/libft/blob/master/src/ft_isalpha.c) | Checks if input is a letter in the `ASCII` table |
 | `int	ft_isdigit(int c)` | Checks if input is a number in the `ASCII` table |
 | `int	ft_isalnum(int c)` | Checks if input is a number or letter in the `ASCII` table |
 | `int	ft_isascii(int c)` | Checks if input belongs to the `ASCII` table |
