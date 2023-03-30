@@ -5,6 +5,17 @@ In the `libft` project we are ask to create a library with some home-made functi
 
 
 ## Functions:
+* [True/False](#true--false)
+* [String](#string)
+* [String memory related](#string-memory-related)
+* [String lenght related](#string-lenght-related)
+* [String transformation](#string-transformation)
+* [String comparing](#string-comparing)
+* [fd](#fd)
+* [list](#list)
+* [Other projects](#other-projects)
+* [My own functions](#my-own-functions)
+
 ### True / False
 | **Function** | **Description**|
 | :-------- | :--------- |
@@ -14,7 +25,15 @@ In the `libft` project we are ask to create a library with some home-made functi
 | `int	ft_isascii(int c)` | Checks if input belongs to the `ASCII` table |
 | `int	ft_isprint(int c)` | Checks wether the character is printable |
 
-### Str memory related
+### String
+| **Function** | **Description** |
+| :-------- | :--------- |
+| `void	*ft_bzero(void *s, size_t n)` | Writes `n` zeroes bytes to the string `s` |
+| `void	*ft_memset(void *b, int c, size_t len)` | Writes `len` bytes of value `c` to the string `b` |
+| `void	*ft_memcpy(void *dst, const void *src, size_t n)` | Copies `n` bytes from memory area `src` to memory area `dst`. If `dst` and `src` overlap, behaviour is undefined. Applications in which `dst` and `src` might overlap should use MEMMOVE. **Returns _original value of `dst`_** |
+| `void	*ft_memmove(void *dst, const void *src, size_t len)` | Copies `n` bytes from str `src` to str `dst`. The strings may overlap, the copy is done in a non-destructive manner. **Returns _original value of `dst`_**
+
+### String memory related
 | **Function** | **Description** |
 | :-------- | :--------- |
 | `void	*ft_calloc(size_t count, size_t size)` | Allocates enough memory for `count` objects that are `size` bytes of memory |
@@ -24,14 +43,6 @@ In the `libft` project we are ask to create a library with some home-made functi
 | `char	*ft_strtrim(char const *s1, char const *set)` | Erases all chars in str `set` from str `s1` until it finds a char that doesn't exist in `set`. **Returns _resulting allocated str_** 
 | `char	**ft_split(char const *s1, char c)` | Creates and array of str, resulting of separating str `s1` using `c` as delimiter and finishes with a NULL pointer. **Returns _array of strings_** |
 
-### String
-| **Function** | **Description** |
-| :-------- | :--------- |
-| `void	*ft_bzero(void *s, size_t n)` | Writes `n` zeroes bytes to the string `s` |
-| `void	*ft_memset(void *b, int c, size_t len)` | Writes `len` bytes of value `c` to the string `b` |
-| `void	*ft_memcpy(void *dst, const void *src, size_t n)` | Copies `n` bytes from memory area `src` to memory area `dst`. If `dst` and `src` overlap, behaviour is undefined. Applications in which `dst` and `src` might overlap should use MEMMOVE. **Returns _original value of `dst`_** |
-| `void	*ft_memmove(void *dst, const void *src, size_t len)` | Copies `n` bytes from str `src` to str `dst`. The strings may overlap, the copy is done in a non-destructive manner. **Returns _original value of `dst`_**
-
 ### String lenght related
 | **Function** | **Description** |
 | :-------- | :--------- |
@@ -39,7 +50,7 @@ In the `libft` project we are ask to create a library with some home-made functi
 | `size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)` | Copies up to `dstsize` - 1 from `src` to `dst` |
 | `size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)` | Appends str `src` to the end of `dst`. Appends at most `dstsize` - `strlen(dst)` - 1 characters. It NUL-terminates unless `dstsize` is 0 or original str was longer than `dstsize`. If `src` and `dst` strings overlap, behavious is undefined. **Returns _initial lenght of `dst` + lenght of `src`_** |
 
-### Str transformation
+### String transformation
 | **Function** | **Description** |
 | :-------- | :--------- |
 | `int	ft_atoi(const char *str)` | **Returns _inital portion of str converted to int_** |
@@ -49,7 +60,7 @@ In the `libft` project we are ask to create a library with some home-made functi
 | `char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))` | Applies `f` function to every char in str `s`. **Returns _new str after `f` is applied_**
 | `char	*ft_striteri(char *s, void (*f)(unsigned int, char*))` | Applies `f` function to every char in str `s`. **Returns _new str after `f` is applied_**
 
-### Str comparing
+### String comparing
 | **Function** | **Description** |
 | :-------- | :--------- |
 | `char	*ft_strchr(const char *s, int c)` | Locates first occurrence of `c` int str `s`, '\0' considered. **Returns _pointer to located char or NULL if no `c` in `s`_** |
