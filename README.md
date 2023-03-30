@@ -11,6 +11,7 @@ In the `libft` project we are ask to create a library with some home-made functi
 | `int	ft_isalnum(int c)` | Checks if input is a number or letter in the `ASCII` table |
 | `int	ft_isascii(int c)` | Checks if input belongs to the `ASCII` table |
 | `int	ft_isprint(int c)` | Checks wether the character is printable |
+
 | **STR MEMORY RELATED** | --- |
 | :--------: | :---------: |
 | `void	*ft_calloc(size_t count, size_t size)` | Allocates enough memory for `count` objects that are `size` bytes of memory |
@@ -19,6 +20,7 @@ In the `libft` project we are ask to create a library with some home-made functi
 | `char	*ft_strjoin(char const *s1, char const *s2)` | Allocates enough memory for a copy of str `s1` and `s2` concatenated. **Returns _a pointer to the new str_**
 | `char	*ft_strtrim(char const *s1, char const *set)` | Erases all chars in str `set` from str `s1` until it finds a char that doesn't exist in `set`. **Returns _resulting allocated str_** 
 | `char	**ft_split(char const *s1, char c)` | Creates and array of str, resulting of separating str `s1` using `c` as delimiter and finishes with a NULL pointer. **Returns _array of strings_** |
+
 | **STR** | --- |
 | :--------: | :---------: |
 | `void	*ft_bzero(void *s, size_t n)` | Writes `n` zeroes bytes to the string `s` |
