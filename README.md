@@ -2,20 +2,19 @@
 
 In the `libft` project we are ask to create a library with some home-made functions *(some of them replicate already existing functions)*.
 
-
+1. [Functions](#functions)
+	- [True/False](#true--false)
+	- [String](#string)
+	- [String memory related](#string-memory-related)
+	- [String lenght related](#string-lenght-related)
+	- [String transformation](#string-transformation)
+	- [String comparing](#string-comparing)
+	- [fd](#fd)
+	- [list](#list)
+	- [Other projects](#other-projects)
+	- [Additional functions](#additional-functions)
 
 ## Functions:
-* [True/False](#true--false)
-* [String](#string)
-* [String memory related](#string-memory-related)
-* [String lenght related](#string-lenght-related)
-* [String transformation](#string-transformation)
-* [String comparing](#string-comparing)
-* [fd](#fd)
-* [list](#list)
-* [Other projects](#other-projects)
-* [My own functions](#my-own-functions)
-
 ### True / False
 | **Function** | **Description**|
 | :-------- | :--------- |
@@ -99,8 +98,12 @@ Other projects of 42 that I've added to the library for convenience
 | [`char	*get_next_line(int fd)`](https://github.com/glutack/get_next_line) | Program that reads `fd` given |
 | [`int	ft_printf(char const *arg, ...)`](https://github.com/glutack/ft_printf) | Dupe of printf function |
 
-### My own functions
+### Additional functions
 Functions not specified for LIBFT project that I've created while doing other projects
 | **Function** | **Description** |
 | :-------- | :--------- |
 | [`void	ft_free_split(char **ptr)`](https://github.com/glutack/libft/blob/master/src/ft_free_split.c) | Frees all strings int a str array |
+
+---
+banner by @me
+30/03/2023
