@@ -3,15 +3,14 @@
 In the `libft` project we are ask to create a library with some home-made functions *(some of them replicate already existing functions)*
 
 ## Functions:
-
+<p align="center">
 |  **TRUE / FALSE** | --- |
 | :--------: | :---------: |
 | [`int	ft_isalpha(int c)`](https://github.com/glutack/libft/blob/master/src/ft_isalpha.c) | Checks if input is a letter in the `ASCII` table |
 | [`int	ft_isdigit(int c)`](https://github.com/glutack/libft/blob/master/src/ft_isdigit.c) | Checks if input is a number in the `ASCII` table |
 | `int	ft_isalnum(int c)` | Checks if input is a number or letter in the `ASCII` table |
 | `int	ft_isascii(int c)` | Checks if input belongs to the `ASCII` table |
-| `int	ft_isprint(int c)` | Checks wether the character is printable |
----
+| `int	ft_isprint(int c)` | Checks wether the character is printable |</p>
 | **STR MEMORY RELATED** | --- |
 | :--------: | :---------: |
 | `void	*ft_calloc(size_t count, size_t size)` | Allocates enough memory for `count` objects that are `size` bytes of memory |
