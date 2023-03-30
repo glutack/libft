@@ -4,7 +4,7 @@ In the `libft` project we are ask to create a library with some home-made functi
 
 ## Functions:
 | Function | Description |
-| :------: | :---------: |
+| :--------: | :---------: |
 | **TRUE(1) / FALSE(0)** | --- |
 | `int	ft_isalpha(int c)` | Checks if input is a letter in the `ASCII` table |
 | `int	ft_isdigit(int c)` | Checks if input is a number in the `ASCII` table |
