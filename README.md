@@ -1,6 +1,6 @@
 <p align="center"><img src="https://github.com/glutack/glutack/blob/master/42img/libft_banner.png?raw=true" alt="libft 42 banner 125% 02/06/2022"/></p>
 
-In the `libft` project we are ask to create a library with some home-made functions *(some of them replicate already existing functions)*.
+Library with some home-made functions *(some of them replicate already existing functions)*.
 
 1. [Functions](#functions)
 	- [True/False](#true--false)
